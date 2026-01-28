@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Tempahan Ceramah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- FASA 1: LANDING PAGE -->
+        <h1 class="main-title">Ceramah Pembangunan Diri & Kerjaya dalam bidang IT</h1>
+
+        <h2>Penceramah</h2>
+        <div class="speaker">
+            <img src="gmbr penceramah.jpeg" alt="TS. HOR HAFIZAH BINTI MD DESA">
+            <p>
+                <strong>TS. NOR HAFIZAH BINTI MD DESA</strong><br>
+                Pensyarah Jabatan Teknologi Matlumat Dan Komunikasi<br>
+                Kepakaran:Pembangunan Perisian, Keselamatan Rangkaian, dan Inovasi Digital.
+            </p>
+        </div>
+
+        <h2>Sinopsis</h2>
+        <p>
+            Dalam era di mana teknologi berubah sepantas kilat, sekadar memiliki ijazah atau diploma tidak lagi
+            mencukupi. Ceramah
+            ini mengupas realiti landskap kerjaya masa kini yang semakin didominasi oleh kecerdasan buatan (AI) dan
+            automasi. Beliau
+            akan membawa audiens meneroka bagaimana untuk kekal relevan dalam pasaran kerja yang kompetitif.
+        </p>
+
+        <h2>Logistik</h2>
+        <p>
+            Tarikh: 18 Ogos 2026<br>
+            Masa: 8.30 pagi – 10.00 pagi<br>
+            Lokasi: Dewan Kuliah Utama (DKU)
+        </p>
+
+        <h2>Yuran</h2>
+        <p>RM 15.00 seorang</p>
+
+        <h2>Hubungan</h2>
+        <p>Email: tsnorhafizah@gmail.com | Telefon: 012-3456789</p>
+
+        <!-- FASA 2: BORANG TEMPAHAN -->
+        <h2>Borang Tempahan</h2>
+
+        <form id="bookingForm">
+            <label>Nama Penuh</label>
+            <input type="text" id="nama" required>
+
+            <label>Alamat E-mel</label>
+            <input type="email" id="email" required>
+
+            <label>Nombor Telefon</label>
+            <input type="text" id="telefon" required>
+
+            <label>Kategori Peserta</label>
+            <select id="kategori" required>
+                <option value="">-- Pilih --</option>
+                <option>Pelajar</option>
+                <option>Pensyarah</option>
+                <option>Orang Awam</option>
+                <option>Korporat</option>
+            </select>
+
+            <label>Bilangan Slot</label>
+            <input type="number" id="slot" min="1" required>
+
+            <label>Bukti Pembayaran</label>
+            <input type="file" required>
+
+            <label class="checkbox">
+                <input type="checkbox" id="akuan" required>
+                Saya bersetuju dengan terma dan syarat
+            </label>
+
+            <button type="submit">Hantar</button>
+        </form>
+
+        <!-- FASA 3: PAPARAN PENGESAHAN -->
+        <div id="confirmationBox" class="confirmation"></div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
